@@ -16,6 +16,8 @@ body{
     border: solid rgb(59, 138, 59);
     background-color: rgb(160, 214, 160);
     color: white;
+    font-size: larger;
+    font-weight: bold;
 }
 button{
     padding: 10px 15px;
@@ -74,10 +76,14 @@ li{
     font-size: large;
 }
 table, th, tr, td{
-    border-style: hidden ;border-spacing: 4px;width: 80%; border-color:rgb(78, 76, 76);
+    border-style: hidden ;border-spacing: 80px; border-color:rgb(78, 76, 76);
     /* border-style: none; */
-    margin: 3% 0%;
+    margin: 0% 0%;
 }
+td{
+    border-spacing: 50px;
+}
+
 
 .cryptoFeatures{
     display: grid;
@@ -190,7 +196,10 @@ h2{
 
 }
 #reg{
-    color: green;
+    color: rgb(74, 167, 74);
+}
+.TXT{
+    color:purple;
 }
 input{
     padding: 12px 10%;
@@ -203,4 +212,72 @@ footer{
     display: grid;
     grid-template-columns: repeat( 4, 1fr);
     margin: 3% 0%;
+}
+
+/* Media Queries */
+@media screen  and (max-width:800px){
+    .navbar{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    .getStarted{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .getStartedimage{
+        margin-top: 2%;
+    }
+    .Cryptobar{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+    }
+    .BuyCrypto{
+        display: grid;
+        gap: 30%;
+        font-size: medium;
+    }
+    table, th, tr, td{
+        border-style: hidden ;border-spacing: 30px; border-color:rgb(78, 76, 76);
+        /* border-style: none; */
+        margin: 0% 0%;
+    }
+    .cryptoFeatures{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10%;
+    }
+  .ftrs{
+    margin-left: 30%;
+    font-size: small;
+    margin-bottom: 25%;
+   
+  }
+  .CryptoInvest{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+  }
+  .cryptoCharts{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+  }
+  #Clarity{
+    margin: 0% 0%;
+  }
+  .cryptomobile{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+  }
+  body{
+    font-size: small;
+  }
+  img{
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen  and(max-width: 1200px){
+
 }
